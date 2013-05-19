@@ -1,0 +1,22 @@
+<snippet>
+    <content><![CDATA[class ${1:${TM_FILENAME/(?:\A|_)([A-Za-z0-9]+)(?:\.rb)?/(?2::\u$1)/g}}
+	
+	${2:# include/extend (we'll see these later)
+	$0
+	# Constants
+
+	# Attribute macros
+	$3
+	# Other macros 
+
+	# Public class methods
+	$4
+	# Public instance methods
+	$5
+	# private/protected methods }
+
+end]]></content>
+    <tabTrigger>cla</tabTrigger>
+    <scope>source.ruby</scope>
+    <description>class .. end</description>
+</snippet>

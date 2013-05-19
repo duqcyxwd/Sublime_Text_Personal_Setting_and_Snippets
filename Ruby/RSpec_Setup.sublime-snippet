@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[require 'J:/CodingTools/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rspec-core-2.13.1/lib/rspec/autorun'
+
+#===================================Code=============================================
+$1
+
+#==================================RSpec=============================================    
+$2
+
+]]></content>
+    <tabTrigger>rspec</tabTrigger>
+    <scope>source.ruby</scope>
+    <description>Set up rspec for Windows</description>
+</snippet>
