@@ -1,7 +1,6 @@
-Sublime_Text_Personal_Setting_and_Snippets
+Sublime Text Personal Setting and Snippets
 ==========================================
 
-Sublime_Text_Personal_Setting_and_Snippets
 
 This is a folder for my personal setting and snippets for Sublime Text 2
 
@@ -29,4 +28,4 @@ Sometimes it is not working. It will create multipy  `=begin` and `=end` instead
 
 (I am using windows and my directory is `C:\Users\UsersName\AppData\Roaming\Sublime Text 2\Packages\User`)
 
-There are also some snippets and personal setting for sublime thatI am using. You can find it out from my [github](https://github.com/duqcyxwd/Sublime_Text_Personal_Setting_and_Snippets)
+There are more stuff you can can find it out from my [github](https://github.com/duqcyxwd/Sublime_Text_Personal_Setting_and_Snippets)
