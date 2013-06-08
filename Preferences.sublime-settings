@@ -1,6 +1,17 @@
 {
+	"auto_complete": true,
+	"auto_complete_commit_on_tab": false,
+	"auto_complete_selector": "source - comment",
+	"auto_complete_triggers":
+	[
+		{
+			"characters": "<",
+			"selector": "text.html"
+		}
+	],
+	"auto_complete_with_fields": false,
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
+	"color_scheme": "Packages/User/Theme/Monokai Bright Personal.tmTheme",
 	"dictionary": "Packages/Language - English/en_US.dic",
 	"folder_exclude_patterns":
 	[
@@ -9,8 +20,9 @@
 		".hg",
 		"CVS"
 	],
-	"font_size": 11,
+	"font_size": 12,
 	"highlight_line": false,
+	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 	],

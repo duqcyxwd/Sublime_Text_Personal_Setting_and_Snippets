@@ -1,13 +1,13 @@
 [
 	{ "keys": ["ctrl+t"], "command": "side_bar_new_file2" },
-	{ "keys": ["f2"], "command": "side_bar_rename" },
+	// { "keys": ["f2"], "command": "side_bar_rename" },
 	{ "keys": ["ctrl+alt+f"], "command": "side_bar_find_files_path_containing" },
 	{ "keys": ["ctrl+j"], "command": "join_lines" },
 
 
 	//Alignment
 
-	{ "keys": ["ctrl+alt+s"], "command": "alignment" },
+	{ "keys": ["ctrl+alt+e"], "command": "alignment" },
 
 	//sideBarEnchancements
 	//open
@@ -25,6 +25,82 @@
 
     { "keys": ["ctrl+q"], "command": "toggle_comment", "args": { "block": false } },
 
+    //layout
+    	{
+		"keys": ["ctrl+l", "ctrl+1"],
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 1.0],
+			"rows": [0.0, 1.0],
+			"cells": [[0, 0, 1, 1]]
+		}
+	},
+	{
+		"keys": ["ctrl+l", "ctrl+2"],
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 0.5, 1.0],
+			"rows": [0.0, 1.0],
+			"cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+		}
+	},
+	{
+		"keys": ["ctrl+l", "ctrl+3"],
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 1.0],
+			"rows": [0.0, 0.5, 1.0],
+			"cells": [[0, 0, 1, 1], [0, 1, 1, 2]]
+		}
+	},
+	{
+		"keys": ["ctrl+l", "ctrl+4"],
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 1.0],
+			"rows": [0.0, 0.33, 0.66, 1.0],
+			"cells": [[0, 0, 1, 1], [0, 1, 1, 2], [0, 2, 1, 3]]
+		}
+	},
+	{
+		"keys": ["ctrl+l", "ctrl+5"],
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 0.5, 1.0],
+			"rows": [0.0, 0.5, 1.0],
+			"cells":
+			[
+				[0, 0, 1, 1], [1, 0, 2, 1],
+				[0, 1, 1, 2], [1, 1, 2, 2]
+			]
+		}
+	},
+
     //Gist
-	{ "keys": ["ctrl+k", "ctrl+o"], "command": "gist_open_browser" }
+	{ "keys": ["ctrl+k", "ctrl+o"], "command": "gist_open_browser" },
+
+	//short cut for <% %>
+	{
+		"args": {"contents": "%= $0 %>"},
+
+		"command": "insert_snippet", "context": [
+		{
+			"key": "selector", 
+			"match_all": true, 
+			"operand": "source.ruby, text.html.ruby, text.haml", 
+			"operator": "equal"
+		},
+		{ 
+			"key": "preceding_text",
+			"operator": "regex_match",
+			"operand": ".*<",
+			"match_all": true }
+		],
+		"keys": ["%"] 
+	}
 ]
