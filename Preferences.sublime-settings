@@ -1,7 +1,7 @@
 {
 	"auto_complete": true,
 	"auto_complete_commit_on_tab": false,
-	"auto_complete_selector": "source - comment",
+	"auto_complete_selector": "text, source - comment",
 	"auto_complete_triggers":
 	[
 		{
@@ -9,10 +9,11 @@
 			"selector": "text.html"
 		}
 	],
-	"auto_complete_with_fields": false,
+	"auto_complete_with_fields": true,
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/User/Theme/Monokai Bright Personal.tmTheme",
 	"dictionary": "Packages/Language - English/en_US.dic",
+	"enable_tab_scrolling": true,
 	"folder_exclude_patterns":
 	[
 		".svn",
@@ -20,15 +21,20 @@
 		".hg",
 		"CVS"
 	],
-	"font_size": 12,
+	"font_size": 11,
 	"highlight_line": false,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 	],
+	"ignored_words":
+	[
+		"Ubuntu"
+	],
 	"shift_tab_unindent": true,
 	"spell_check": true,
-	"tab_completion": true,
+	"tab_completion": false,
 	"tab_size": 4,
-	"translate_tabs_to_spaces": false
+	"translate_tabs_to_spaces": false,
+	"trimtrailingwhitespaceon_save": true
 }

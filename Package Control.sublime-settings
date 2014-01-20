@@ -1,19 +1,11 @@
 {
 	"installed_packages":
 	[
-		"Alignment",
-		"Bison",
 		"BracketHighlighter",
-		"GBK Encoding Support",
-		"Gist",
-		"HtmlTidy",
-		"JsFormat",
-		"Package Control",
-		"Prolog",
-		"Ruby on Rails snippets",
-		"RubyFormat",
-		"SideBarEnhancements",
-		"SublimeCodeIntel",
-		"SublimeLinter"
+		"ConvertToUTF8",
+		"EasyDiff",
+		"Git",
+		"Markdown Preview",
+		"SideBarEnhancements"
 	]
 }

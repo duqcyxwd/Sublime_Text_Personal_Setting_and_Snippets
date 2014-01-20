@@ -77,28 +77,6 @@
 
 
 
-
-
-    //  User Commands setting
-    {
-        "caption": "Sublime_Commands_User_Setting",
-        "command": "open_file", "args":
-        {
-            "file": "${packages}/User/User.sublime-commands",
-            "platform": "Windows"
-        }
-    },
-    //Default Commands view
-    {
-        "caption": "Sublime_Commands_Default_Setting",
-        "command": "open_file", "args":
-        {
-            "file": "${packages}/Default/Default.sublime-commands",
-            "platform": "Windows"
-        }
-    },
-
-
     //spell check
 
     { 
@@ -107,11 +85,41 @@
         "args": {"setting": "spell_check"} 
     },
 
+
+    //  User Commands setting
+    {
+        "caption": "Browse: Commands_User_Setting",
+        "command": "open_file", "args":
+        {
+            "file": "${packages}/User/User.sublime-commands",
+            "platform": "Windows"
+        }
+    },
+    //Default Commands view
+    {
+        "caption": "Browse: Commands_Default_Setting",
+        "command": "open_file", "args":
+        {
+            "file": "${packages}/Default/Default.sublime-commands",
+            "platform": "Windows"
+        }
+    },
+
     //Browse User Setting Folder
     { 
-        "caption": "Browse User Setting Folder", 
+        "caption": "Browse: User Setting Folder", 
         "command": "open_dir", 
         "args": {"dir": "$packages/User"} 
+    },
+
+        // Session.sublime_session
+    {
+        "caption": "Browse: Session.sublime_session",
+        "command": "open_file", "args":
+        {
+            "file": "${packages}/../Local/Session.sublime_session",
+            "platform": "Windows"
+        }
     },
 
     // Vintage setting    
@@ -142,9 +150,7 @@
         }
     },
 
-
     // SideBarEnhancements
-
     {
         "caption": "File: Reveal (Open File Directory) ",
         "command": "side_bar_reveal"
@@ -157,7 +163,7 @@
     }
 
 /*    {   
-        "caption": "File: Project Seearch",
+        "caption": "File: Project Search",
         "command": "side_bar_find_files_path_containing"
     }*/
 

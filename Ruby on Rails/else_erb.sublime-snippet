@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[<% else %>
+$1]]></content>
+    <tabTrigger>el</tabTrigger>
+    <scope>text.html.ruby</scope>
+    <description>else (ERB)</description>
+</snippet>

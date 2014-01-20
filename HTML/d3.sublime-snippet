@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+<script src="http://d3js.org/d3.v3.min.js"></script>${1}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>d3</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.html</scope> -->
+	<scope>text.html</scope>
+	<descriptiond>D3 script</description>
+</snippet>

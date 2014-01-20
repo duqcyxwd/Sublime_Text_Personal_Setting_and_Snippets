@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[<!DOCTYPE html>
+<html>
+<head>
+	<title>$1</title>
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+</head>
+<body>
+	$2
+</body>
+<script>$3</script>
+
+</html>]]></content>
+	<tabTrigger>htd3</tabTrigger>
+	<scope>text.html</scope>
+</snippet>

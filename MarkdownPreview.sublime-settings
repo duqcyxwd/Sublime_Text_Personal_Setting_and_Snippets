@@ -1,0 +1,13 @@
+/*
+    Markdown Preview User settings
+*/
+{
+    /*
+        Sets the default css file to embed in the HTML
+
+        default - Use the builtin CSS or github CSS, depending on parser config (markdown.css or github.css)
+        other - Set an absolute path or url to any css file
+    */
+    // "css": "User/MarkdownPreviewCSSMarkdownPreviewCSS/markdown.css"
+
+}

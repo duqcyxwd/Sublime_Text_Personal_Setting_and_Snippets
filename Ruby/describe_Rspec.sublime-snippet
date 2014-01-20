@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[describe $1 do
+    describe $2 do
+        $3
+    end
+end$0
+]]></content>
+    <tabTrigger>des</tabTrigger>
+    <scope>source.ruby</scope>
+    <description>describe Rspec</description>
+</snippet>

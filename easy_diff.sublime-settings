@@ -1,0 +1,59 @@
+{
+    // Show internal diff options (Easy Diff in a view or buffer)
+    "show_internal": true,
+
+    // Show external options (options to send files to external diff tool)
+    "show_external": false,
+
+    // External diff tool path (absolute)
+    "external_diff": "",
+
+    // Git Path
+    "git": "C:/wamp/www/repo/webdelivery-chuan-Version3/webdelivery",
+
+    // (Mercurial) Hg path
+    "hg": "",
+
+    // Turn off svn completely
+    "svn_disabled": false,
+
+    // Turn off git completely
+    "git_disabled": false,
+
+    // Turn off (Mercurial) hg completely
+    "hg_disabled": false,
+
+    // Turn off svn menu access
+    "svn_hide_menu": false,
+
+    // Turn off git menu access
+    "git_hide_menu": false,
+
+    // Turn off (Mercurial) hg menu access
+    "hg_hide_menu": false,
+
+    // Menus to show (view|tab|sidebar)
+    "menu_types": ["view", "tab", "sidebar"],
+
+    // Do not perform a version check on files
+    // when evaluating whether version control
+    // commands are enabled.  May avoid slowing
+    // down context menu draw in large version
+    // controlled projects.
+    "skip_version_check_on_is_enabled": false,
+
+    // Use a buffer instead of the output panel
+    "use_buffer": true,
+
+    // Enable clipboard commands
+    "use_clipboard": true,
+
+    // Enable selection commands
+    "use_selections": true,
+
+    // If enabled, this allows for multiple selections.
+    // Each selection is separated with a new line.
+    "multi_select": false,
+
+    "use_sub_notify": true
+}
