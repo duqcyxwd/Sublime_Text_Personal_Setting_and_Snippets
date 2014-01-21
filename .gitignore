@@ -165,7 +165,9 @@ pip-log.txt
 ############
 ## Sublime
 ############
-Package\ Control.last-run
-
+*.last-run
+Package/ Control.*
 Package/ Control.last-run
 "Package Control.last-run"
+
+encoding_cache.json

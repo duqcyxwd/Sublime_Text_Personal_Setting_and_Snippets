@@ -24,7 +24,6 @@
 
 
 	//Alignment
-
 	{ "keys": ["ctrl+alt+e"], "command": "alignment" },
 
 	//sideBarEnchancements
@@ -98,8 +97,8 @@
 
 	{ "keys": ["alt+d"], "command": "goto_definition" },
 
-	// Setting for escape
 
+	// Setting for escape
 	{ "keys": ["escape"], "command": "enter_insert_mode", "args":
 		{"insert_command": "move", "insert_args": {"by": "characters", "forward": true} },
 		"context":
@@ -108,8 +107,29 @@
 			{"key": "selection_empty"}
 		]
 	},
+		{ "keys": ["escape"], "command": "single_selection", "context":
+		[
+			{ "key": "num_selections", "operator": "not_equal", "operand": 1 }
+		]
+	},
+	{ "keys": ["escape"], "command": "hide_panel", "args": {"cancel": true},
+		"context":
+		[
+			{ "key": "panel_visible", "operator": "equal", "operand": true }
+		]
+	},
+	{ "keys": ["escape"], "command": "hide_overlay", "context":
+		[
+			{ "key": "overlay_visible", "operator": "equal", "operand": true }
+		]
+	},
+	{ "keys": ["escape"], "command": "hide_auto_complete", "context":
+		[
+			{ "key": "auto_complete_visible", "operator": "equal", "operand": true }
+		]
+	},
 
-	//Vintage
+	// Vintage
 	{ "keys": ["f1"], "command": "exit_insert_mode",
 		"context":
 		[
@@ -158,10 +178,12 @@
 	},
 
 
-
+	// find within files
 	{ "keys": ["ctrl+f3"], "command": "find_under" },
 	{ "keys": ["ctrl+shift+f3"], "command": "find_under_prev" },
 	{ "keys": ["f4"], "command": "find_under_prev" },
+
+	// find over files
 	{ "keys": ["f5"], "command": "next_result" },
 	{ "keys": ["shift+f5"], "command": "prev_result" },
 
@@ -188,9 +210,9 @@
 			{ "key": "setting.tab_completion", "operator": "equal", "operand": true }
 		]
 	},
-	{ "keys": ["tab"], "command": "replace_completion_with_next_completion", "context":
+	{ "keys": ["ctrl+0"], "command": "replace_completion_with_next_completion", "context":
 		[
-			{ "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
+			// { "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
 			{ "key": "setting.tab_completion", "operator": "equal", "operand": true }
 		]
 	},
@@ -227,19 +249,17 @@
 		]
 	}, 
 
-
-
 	// { "keys": ["tab"], "command": "move", "args": {"by": "characters", "forward": true}, "context":
 	// 	[
 	// 	{ "key": "auto_complete_visible", "operator": "equal", "operand": false },
 	// 	{ "key": "following_text", "operator": "regex_contains", "operand": "^[\\^\\\\,.>'){}}\"\\[\\]]", "match_all": true }
 	// 	] 
 	// },
-
 	{ "keys": ["tab"], "command": "move", "args": {"by": "characters", "forward": true}, "context":
 		[
 		// Tab out of quotes, and closing brackets
 		{ "key": "following_text", "operator": "regex_contains", "operand": "^[	 \\^\\\\,.;:=<>')}\"\\[\\]]", "match_all": true },
+		{ "key": "has_next_field", "operator": "equal", "operand": false },
 		{ "key": "selection_empty"}
 		]
 	}
