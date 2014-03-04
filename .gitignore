@@ -3,6 +3,7 @@
 #################
 *.dmp
 Package Control.last-run
+*.last-run
 #################
 ## Eclipse
 #################

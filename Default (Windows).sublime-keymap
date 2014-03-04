@@ -87,9 +87,6 @@
 	// save all
 	{ "keys": ["ctrl+k", "ctrl+s"], "command": "save_all"},
 
-	// { "keys": ["ctrl+alt+up"], "command": "select_lines", "args": {"forward": false} },
-	// { "keys": ["ctrl+alt+down"], "command": "select_lines", "args": {"forward": true} },
-
 	{ "keys": ["alt+up"], "command": "select_lines", "args": {"forward": false} },
 	{ "keys": ["alt+down"], "command": "select_lines", "args": {"forward": true} },
 
