@@ -5,7 +5,9 @@
 		"ConvertToUTF8",
 		"EasyDiff",
 		"Git",
+		"JsFormat",
 		"Markdown Preview",
+		"MiniPy",
 		"SideBarEnhancements"
 	]
 }

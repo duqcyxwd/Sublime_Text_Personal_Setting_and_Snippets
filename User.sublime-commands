@@ -140,7 +140,7 @@
             "platform": "Windows"
         }
     },
-
+ 
     {
         "caption": "Vintage: Preferences.sublime-settings",
         "command": "open_file", "args":

@@ -1,0 +1,10 @@
+{
+    "user": {
+        "debug": false,
+        "plugins": {
+            "Java": {
+                "disable": true
+            }
+        }
+    }
+}

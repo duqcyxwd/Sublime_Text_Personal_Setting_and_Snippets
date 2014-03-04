@@ -1,6 +1,6 @@
 [
-	{ "keys": ["ctrl+t"], "command": "side_bar_new_file2" },
-	// { "keys": ["f2"], "command": "side_bar_rename" },
+	{ "keys": ["ctrl+t"], "command": "side_bar_new_file" },
+	// { "keys": ["f2"], "command": "side_bar_rename" },  //f2 used for bookmark
 	{ "keys": ["ctrl+alt+f"], "command": "side_bar_find_files_path_containing" },
 	{ "keys": ["ctrl+j"], "command": "join_lines" },
 
@@ -84,10 +84,8 @@
 		"keys": ["%"] 
 	},
 
-
-
-	{ "keys": ["ctrl+shift+up"], "command": "swap_line_up" },
-	{ "keys": ["ctrl+shift+down"], "command": "swap_line_down" },
+	// save all
+	{ "keys": ["ctrl+k", "ctrl+s"], "command": "save_all"},
 
 	// { "keys": ["ctrl+alt+up"], "command": "select_lines", "args": {"forward": false} },
 	// { "keys": ["ctrl+alt+down"], "command": "select_lines", "args": {"forward": true} },
@@ -210,12 +208,6 @@
 			{ "key": "setting.tab_completion", "operator": "equal", "operand": true }
 		]
 	},
-	{ "keys": ["ctrl+0"], "command": "replace_completion_with_next_completion", "context":
-		[
-			// { "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
-			{ "key": "setting.tab_completion", "operator": "equal", "operand": true }
-		]
-	},
 	// { "keys": ["tab"], "command": "commit_completion", "context":
 	// 	[
 	// 		{ "key": "auto_complete_visible" },
@@ -249,15 +241,10 @@
 		]
 	}, 
 
-	// { "keys": ["tab"], "command": "move", "args": {"by": "characters", "forward": true}, "context":
-	// 	[
-	// 	{ "key": "auto_complete_visible", "operator": "equal", "operand": false },
-	// 	{ "key": "following_text", "operator": "regex_contains", "operand": "^[\\^\\\\,.>'){}}\"\\[\\]]", "match_all": true }
-	// 	] 
-	// },
 	{ "keys": ["tab"], "command": "move", "args": {"by": "characters", "forward": true}, "context":
 		[
 		// Tab out of quotes, and closing brackets
+		{ "key": "auto_complete_visible", "operator": "equal", "operand": false },
 		{ "key": "following_text", "operator": "regex_contains", "operand": "^[	 \\^\\\\,.;:=<>')}\"\\[\\]]", "match_all": true },
 		{ "key": "has_next_field", "operator": "equal", "operand": false },
 		{ "key": "selection_empty"}
