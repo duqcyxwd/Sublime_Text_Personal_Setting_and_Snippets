@@ -2,8 +2,15 @@
 ## My Exception
 #################
 *.dmp
-Package Control.last-run
+
+
+############
+## Sublime
+############
 *.last-run
+*.cache
+encoding_cache.json
+
 #################
 ## Eclipse
 #################
@@ -168,12 +175,3 @@ pip-log.txt
 # Mac crap
 .DS_Store
 
-############
-## Sublime
-############
-*.last-run
-Package/ Control.*
-Package/ Control.last-run
-"Package Control.last-run"
-
-encoding_cache.json
