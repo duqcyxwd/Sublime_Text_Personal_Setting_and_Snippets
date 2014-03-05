@@ -9,6 +9,7 @@
 ############
 *.last-run
 *.cache
+sublime_Setting.sublime-workspace
 encoding_cache.json
 
 #################
