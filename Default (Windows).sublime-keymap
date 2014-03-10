@@ -26,6 +26,10 @@
 	//Alignment
 	{ "keys": ["ctrl+alt+e"], "command": "alignment" },
 
+	//build
+
+	{ "keys": ["f7"], "command": "build" },
+
 	//sideBarEnchancements
 	//open
 	{ 
@@ -34,11 +38,30 @@
         "args": {"paths": []} 
     },
 
-    	{ 
+    { 
 		"keys": ["alt+f2"], 
 		"command": "side_bar_open",
         "args": {"paths": []} 
     },
+
+    { 
+    	"keys": ["alt+f10"],
+    	"command": "side_bar_open_in_browser" ,
+    	"args":{"paths":[], "type":"testing"}
+    },
+    { 
+    	"keys": ["f10"],
+    	"command": "side_bar_open_in_browser",
+    	"args":{"paths":[], "type":"production"}
+    },
+
+    // Setting for ctrl D  But this is not work
+    { "keys": ["alt+c"], "command": "toggle_case_sensitive"
+    },
+    { "keys": ["alt+w"], "command": "toggle_whole_word"
+    },
+
+
 
     // { "keys": ["ctrl+q"], "command": "toggle_comment", "args": { "block": false } },
 

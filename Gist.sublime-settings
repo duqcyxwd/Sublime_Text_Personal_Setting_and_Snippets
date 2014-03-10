@@ -7,7 +7,7 @@
 
 	// Your GitHub API token
 	// see: https://github.com/condemil/Gist#generating-access-token
-	"token": "",
+	"token": "1a72f03fb731181e9e04d077082ef9fa54d51545",
 
 	// Show GitHub organizations
 	"include_orgs": true,
@@ -18,7 +18,7 @@
 	// "include_users": ["user1", "user2"],
 
 	// Show the authors of Gists
-	"show_authors": false,
+	"show_authors": true,
 
 	// Proxy server
 	// Format: "http://user:pass@proxy:port"
