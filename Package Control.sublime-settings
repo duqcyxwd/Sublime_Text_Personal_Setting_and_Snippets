@@ -1,14 +1,23 @@
 {
 	"installed_packages":
 	[
+		"Alignment",
 		"BracketHighlighter",
 		"ConvertToUTF8",
 		"EasyDiff",
 		"Gist",
 		"Git",
 		"JsFormat",
+		"Gist",
 		"Markdown Preview",
 		"MiniPy",
-		"SideBarEnhancements"
+		"SideBarEnhancements",
+		"SmartMarkdown",
+		"sublimelint",
+		"SublimErl"
+	],
+	"repositories":
+	[
+		"https://github.com/ostinelli/SublimErl.git"
 	]
 }
