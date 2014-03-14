@@ -176,3 +176,4 @@ pip-log.txt
 # Mac crap
 .DS_Store
 
+Package Control.system-ca-bundle
