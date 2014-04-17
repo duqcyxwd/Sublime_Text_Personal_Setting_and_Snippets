@@ -1,0 +1,8 @@
+<snippet>
+	<tabTrigger>eq</tabTrigger>
+	<scope>source.python</scope>
+	<description>override eql</description>
+	<content><![CDATA[def __eql__(self, other):
+	return ${2:str(self.value)} == other
+	$0]]></content>
+</snippet>

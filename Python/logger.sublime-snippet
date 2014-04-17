@@ -1,0 +1,10 @@
+<snippet>
+    <tabTrigger>logger</tabTrigger>
+    <scope>source.python</scope>
+    <description>Logger default</description>
+
+    <content><![CDATA[logging.config.fileConfig("${1:logger.conf}")
+logger = logging.getLogger("${2:Server}")
+# logger = logging.getLogger("Null")
+$0]]></content>
+</snippet>
