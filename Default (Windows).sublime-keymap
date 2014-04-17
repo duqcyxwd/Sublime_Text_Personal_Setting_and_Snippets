@@ -4,6 +4,9 @@
 	{ "keys": ["ctrl+alt+f"], "command": "side_bar_find_files_path_containing" },
 	{ "keys": ["ctrl+j"], "command": "join_lines" },
 
+	// Cancel running building
+	{"keys": ["ctrl+shift+c"], "command": "exec", "args": {"kill": true} },
+	{"keys": ["pause"], "command": "exec", "args": {"kill": true} },
 	//Markdown Previewer
 
 	{"keys": ["ctrl+m", "ctrl+p"], 
@@ -82,7 +85,13 @@
 	{ "keys": ["ctrl+m","ctrl+4"], "command": "move_to_group", "args": { "group": 3 } },
 	{ "keys": ["ctrl+0"], "command": "focus_side_bar" },
 
-
+	{ "keys": ["ctrl+k", "ctrl+up"], "command": "new_pane" },
+	{ "keys": ["ctrl+k", "ctrl+shift+up"], "command": "new_pane", "args": {"move": false} },
+	{ "keys": ["ctrl+k", "ctrl+down"], "command": "close_pane" },
+	{ "keys": ["ctrl+k", "ctrl+left"], "command": "focus_neighboring_group", "args": {"forward": false} },
+	{ "keys": ["ctrl+k", "ctrl+right"], "command": "focus_neighboring_group" },
+	{ "keys": ["ctrl+k", "ctrl+shift+left"], "command": "move_to_neighboring_group", "args": {"forward": false} },
+	{ "keys": ["ctrl+k", "ctrl+shift+right"], "command": "move_to_neighboring_group" },
 
     //Gist
 	{ "keys": ["ctrl+k", "ctrl+o"], "command": "gist_open_browser" },
