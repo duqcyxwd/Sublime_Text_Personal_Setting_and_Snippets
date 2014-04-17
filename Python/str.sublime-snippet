@@ -1,0 +1,8 @@
+<snippet>
+	<tabTrigger>str</tabTrigger>
+	<scope>source.python</scope>
+	<description>override str</description>
+	<content><![CDATA[def __str__(self$1):
+	return ${2:str(self.value)}
+	$0]]></content>
+</snippet>
