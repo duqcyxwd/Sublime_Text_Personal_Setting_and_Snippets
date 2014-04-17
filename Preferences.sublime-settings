@@ -23,7 +23,7 @@
 		".hg",
 		"CVS"
 	],
-	"font_size": 15,
+	"font_size": 13,
 	"highlight_line": false,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -35,9 +35,12 @@
 		"Ubuntu"
 	],
 	"shift_tab_unindent": true,
+	"soda_classic_tabs": false,
+	"soda_folder_icons": true,
 	"spell_check": true,
 	"tab_completion": false,
 	"tab_size": 4,
+	"theme": "Soda Dark 3.sublime-theme",
 	"translate_tabs_to_spaces": false,
 	"trimtrailingwhitespaceon_save": true
 }

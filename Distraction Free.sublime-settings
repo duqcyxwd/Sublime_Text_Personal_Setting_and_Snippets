@@ -4,5 +4,6 @@
 	"draw_centered": false,
 	"wrap_width": 105,
 	"word_wrap": true,
-	"scroll_past_end": true
+	"scroll_past_end": true,
+	"show_tabs": true
 }
