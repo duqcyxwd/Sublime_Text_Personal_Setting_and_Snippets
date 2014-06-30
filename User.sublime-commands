@@ -1,4 +1,8 @@
 [
+    {
+        "caption": "Example",
+        "command": "example"
+    },
     //layout setting
     {
         "caption": "Layout: single",
@@ -85,10 +89,9 @@
         "args": {"setting": "spell_check"} 
     },
 
-
     //  User Commands setting
     {
-        "caption": "Browse: Commands_User_Setting",
+        "caption": "Edit: User Commands Setting",
         "command": "open_file", "args":
         {
             "file": "${packages}/User/User.sublime-commands",
@@ -97,7 +100,7 @@
     },
     //Default Commands view
     {
-        "caption": "Browse: Commands_Default_Setting",
+        "caption": "Browse: Default Commands Setting",
         "command": "open_file", "args":
         {
             "file": "${packages}/Default/Default.sublime-commands",
@@ -150,21 +153,22 @@
         }
     },
 
-    // SideBarEnhancements
     {
-        "caption": "File: Reveal (Open File Directory) ",
-        "command": "side_bar_reveal"
+        "caption": "Vintage: User sublime-keymap",
+        "command": "open_file", "args":
+        {
+            "file": "${packages}/User/Vitage/Default (Windows).sublime-keymap",
+            "platform": "Windows"
+        }
     },
 
-    {
-        "caption": "File: Run / Open",
-        "command": "side_bar_open",
-        "args": {"paths": []}
-    }
+    // Vintageous 
+    { "caption": "Vintageous: Toggle", "command": "toggle_vintageous"},
 
-/*    {   
-        "caption": "File: Project Search",
-        "command": "side_bar_find_files_path_containing"
-    }*/
+    // SideBarEnhancements
+    { "caption": "File: Reveal (Open File Directory) ", "command": "side_bar_reveal" },
+    { "caption": "File: Run / Open", "command": "side_bar_open", "args": {"paths": []} }
+
+    //{   "caption": "File: Project Search", "command": "side_bar_find_files_path_containing" }
 
 ]
