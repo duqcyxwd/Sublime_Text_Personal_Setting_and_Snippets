@@ -1,4 +1,8 @@
 [
+	// Keys for personal plug-in
+	{ "keys": ["alt+shift+l"], "command": "reveal_in_side_bar_and_focus" },
+
+	// Others
 	{ "keys": ["ctrl+t"], "command": "side_bar_new_file" },
 	// { "keys": ["f2"], "command": "side_bar_rename" },  //f2 used for bookmark
 	{ "keys": ["ctrl+alt+f"], "command": "side_bar_find_files_path_containing" },
@@ -6,6 +10,7 @@
 
 	// Cancel running building
 	{"keys": ["ctrl+shift+c"], "command": "exec", "args": {"kill": true} },
+	{"keys": ["escape"], "command": "exec", "args": {"kill": true} },
 	{"keys": ["pause"], "command": "exec", "args": {"kill": true} },
 	//Markdown Previewer
 
@@ -25,6 +30,15 @@
         }
     },
 
+
+	{ "keys": ["ctrl+\\"], "command": "toggle_comment", "args": { "block": false }},
+	{ "keys": ["ctrl+shift+\\"], "command": "toggle_comment", "args": { "block": true }},
+
+    // python go to top
+    { "keys": ["ctrl+e"], "command": "fold_go_to_import" },
+    { "keys": ["ctrl+e"], "command": "jump_back",
+        "context": [{ "key": "last_command", "operator": "equal", "operand": "fold_go_to_import" }]
+    },
 
 	//Alignment
 	{ "keys": ["ctrl+alt+e"], "command": "alignment" },
@@ -126,15 +140,15 @@
 
 
 	// Setting for escape
-	{ "keys": ["escape"], "command": "enter_insert_mode", "args":
-		{"insert_command": "move", "insert_args": {"by": "characters", "forward": true} },
-		"context":
-		[
-			{"key": "setting.command_mode"},
-			{"key": "selection_empty"}
-		]
-	},
-		{ "keys": ["escape"], "command": "single_selection", "context":
+	// { "keys": ["escape"], "command": "enter_insert_mode", "args":
+	// 	{"insert_command": "move", "insert_args": {"by": "characters", "forward": true} },
+	// 	"context":
+	// 	[
+	// 		{"key": "setting.command_mode"},
+	// 		{"key": "selection_empty"}
+	// 	]
+	// },
+	{ "keys": ["escape"], "command": "single_selection", "context":
 		[
 			{ "key": "num_selections", "operator": "not_equal", "operand": 1 }
 		]
@@ -156,23 +170,12 @@
 		]
 	},
 
-	// Vintage
-	{ "keys": ["f1"], "command": "exit_insert_mode",
-		"context":
-		[
-			{ "key": "setting.command_mode", "operand": false },
-			{ "key": "setting.is_widget", "operand": false }
-		]
-	},
-	{ "keys": ["f1"], "command": "enter_insert_mode", "args":
-		{"insert_command": "move", "insert_args": {"by": "characters", "forward": true} },
-		"context":
-		[
-			{"key": "setting.command_mode"},
-			{"key": "selection_empty"}
-		]
-	},
+	// Fold
+	// { "keys": ["ctrl+shift+["], "command": "fold" },
+	// { "keys": ["ctrl+shift+]"], "command": "unfold" },
 
+	// { "keys": ["ctrl+shift+["], "command": "fold_fold_content" },
+	// { "keys": ["ctrl+shift+]"], "command": "fold_unfold_content" },
 
 	// Auto-pair brackets
 	{ "keys": ["`"], "command": "insert_snippet", "args": {"contents": "`$0`"}, "context":
@@ -223,11 +226,11 @@
 			{ "key": "setting.command_mode", "operand": false },
 			{ "key": "setting.is_widget", "operand": false },
 			{ "key": "setting.vintage_ctrl_keys" },
-			{ "key": "selection_empty"}
+			{ "key": "num_selections", "operator": "equal", "operand": 1 },
+			{ "key": "selection_empty"},
+
 		]
 	},
-
-
 
 	{ "keys": ["tab"], "command": "unbound"},
 	{ "keys": ["tab"], "command": "insert_best_completion", "args": {"default": "\t", "exact": true} },
@@ -278,5 +281,7 @@
 		{ "key": "has_next_field", "operator": "equal", "operand": false },
 		{ "key": "selection_empty"}
 		]
-	}
+	},
+
+	{ "keys": ["alt+ctrl+l"], "command": "list_links" }
 ]

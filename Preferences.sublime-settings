@@ -23,12 +23,14 @@
 		".hg",
 		"CVS"
 	],
-	"font_size": 13,
+	"font_size": 11,
 	"highlight_line": false,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"SublimeOnSaveBuild"
+		"SublimeOnSaveBuild",
+		"Vintage",
+		"SublimeFold"
 	],
 	"ignored_words":
 	[
@@ -42,5 +44,7 @@
 	"tab_size": 4,
 	"theme": "Soda Dark 3.sublime-theme",
 	"translate_tabs_to_spaces": false,
-	"trimtrailingwhitespaceon_save": true
+	"trimtrailingwhitespaceon_save": true,
+	"vintageous_reset_mode_when_switching_tabs": false,
+	"vintageous_use_ctrl_keys": false
 }
