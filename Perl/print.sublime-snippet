@@ -1,0 +1,7 @@
+<snippet>
+    <tabTrigger>print</tabTrigger>
+    <scope>source.perl</scope>
+    <description>Print</description>
+
+    <content><![CDATA[print "$1";$0]]></content>
+</snippet>

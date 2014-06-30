@@ -1,0 +1,66 @@
+[
+    // Vintage
+    { "keys": ["f1"], "command": "exit_insert_mode",
+        "context":
+        [
+            { "key": "setting.command_mode", "operand": false },
+            { "key": "setting.is_widget", "operand": false }
+        ]
+    },
+    { "keys": ["f1"], "command": "enter_insert_mode", "args":
+        {"insert_command": "move", "insert_args": {"by": "characters", "forward": true} },
+        "context":
+        [
+            {"key": "setting.command_mode"},
+            {"key": "selection_empty"}
+        ]
+    },
+ 
+    // Vitage: jump
+    // { "keys": ["ctrl+e"], "command": "unbound",
+    //     "context": [{"key": "setting.command_mode"}]
+    // },
+    // { "keys": ["ctrl+e"], "command": "fold_go_to_import",
+    //     "context": [{"key": "setting.command_mode"}]
+    // },
+    // { "keys": ["ctrl+e"], "command": "jump_back",
+    //     "context": [{"key": "setting.command_mode"}, { "key": "last_command", "operator": "equal", "operand": "fold_go_to_import" },]
+    // },
+    // { "keys": ["z", "o"], "command": "fold_unfold_content", "context": [{"key": "setting.command_mode"}] },
+    // { "keys": ["z", "O"], "command": "fold_unfold_content", "context": [{"key": "setting.command_mode"}] },
+    // { "keys": ["z", "c"], "command": "fold_fold_content", "context": [{"key": "setting.command_mode"}] },
+    // { "keys": ["z", "C"], "command": "fold_fold_content", "context": [{"key": "setting.command_mode"}] },
+    // { "keys": ["z", "n"], "command": "unfold_all", "context": [{"key": "setting.command_mode"}] },
+    // { "keys": ["z", "R"], "command": "unfold_all", "context": [{"key": "setting.command_mode"}] },
+    // { "keys": ["z", "m"], "command": "folding_siblings", "context": [{"key": "setting.command_mode"}] },
+    // { "keys": ["z", "M"], "command": "folding_all", "context": [{"key": "setting.command_mode"}] },
+
+    // Vitage: from fold python
+    // Vitageous
+
+    { "keys": ["z", "o"], "command": "fold_unfold_content", "context": [{"key": "vi_command_mode_aware"}] },
+    { "keys": ["z", "O"], "command": "fold_unfold_content", "context": [{"key": "vi_command_mode_aware"}] },
+    { "keys": ["z", "c"], "command": "fold_fold_content", "context": [{"key": "vi_command_mode_aware"}] },
+    { "keys": ["z", "C"], "command": "fold_siblings", "context": [{"key": "vi_command_mode_aware"}] },
+    { "keys": ["z", "r"], "command": "fold_unfold_content", "context": [{"key": "vi_command_mode_aware"}] },
+    { "keys": ["z", "R"], "command": "unfold_all", "context": [{"key": "vi_command_mode_aware"}] },
+    { "keys": ["z", "m"], "command": "fold_siblings_inverse", "context": [{"key": "vi_command_mode_aware"}] },
+    { "keys": ["z", "M"], "command": "fold_siblings", "context": [{"key": "vi_command_mode_aware"}] },
+
+
+    { "keys": ["ctrl+enter"], "command": "fold_unfold_content", "context": [{"key": "setting.command_mode"}] },
+    { "keys": ["enter"], "command": "fold_fold_content", "context": [{"key": "setting.command_mode"}] },
+
+
+    {"keys": ["shift+escape"], "command": "toggle_mode" },
+    {"keys": ["escape"], "command": "press_key", "args": {"key": "<esc>"}, "context": [ {"key": "vi_command_mode_aware"}, ]},
+    {"keys": ["escape"], "command": "_enter_normal_mode", "args": {"mode": "mode_insert"}, "context": [ {"key": "vi_insert_mode_aware"}, ] },
+
+    // { "keys": ["ctrl+k", "ctrl+r"], "command": "unfold_all"},
+    // { "keys": ["ctrl+k", "ctrl+m"], "command": "folding_siblings"},
+    {"keys": ["ctrl+l"], "command": "fold_siblings"},
+    {"keys": ["ctrl+h"], "command": "fold_siblings_inverse"},
+
+    {"keys": ["ctrl+["], "command": "_enter_normal_mode", "args": {"mode": "mode_insert"}, "context": [{"key": "vi_insert_mode_aware"}, {"key": "vi_use_ctrl_keys"}]},
+    {"keys": ["j", "j"], "command": "_enter_normal_mode", "args": {"mode": "mode_insert"}, "context": [{"key": "vi_insert_mode_aware"}] }
+]
