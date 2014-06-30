@@ -1,0 +1,10 @@
+<snippet>
+    <tabTrigger>logs</tabTrigger>
+    <scope>source.python</scope>
+    <description>Logger short</description>
+
+    <content><![CDATA[import logging.config
+logger = logging.getLogger(${1:self.}__name__)
+logging.basicConfig(level=logging.DEBUG)
+$0]]></content>
+</snippet>
