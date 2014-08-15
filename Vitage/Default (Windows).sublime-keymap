@@ -36,8 +36,6 @@
     // { "keys": ["z", "M"], "command": "folding_all", "context": [{"key": "setting.command_mode"}] },
 
     // Vitage: from fold python
-    // Vitageous
-
     { "keys": ["z", "o"], "command": "fold_unfold_content", "context": [{"key": "vi_command_mode_aware"}] },
     { "keys": ["z", "O"], "command": "fold_unfold_content", "context": [{"key": "vi_command_mode_aware"}] },
     { "keys": ["z", "c"], "command": "fold_fold_content", "context": [{"key": "vi_command_mode_aware"}] },
@@ -48,9 +46,8 @@
     { "keys": ["z", "M"], "command": "fold_siblings", "context": [{"key": "vi_command_mode_aware"}] },
 
 
-    { "keys": ["ctrl+enter"], "command": "fold_unfold_content", "context": [{"key": "setting.command_mode"}] },
-    { "keys": ["enter"], "command": "fold_fold_content", "context": [{"key": "setting.command_mode"}] },
-
+    { "keys": ["ctrl+enter"], "command": "fold_fold_content", "context": [{"key": "setting.command_mode"}] },
+    { "keys": ["enter"], "command": "fold_unfold_content", "context": [{"key": "setting.command_mode"}] },
 
     {"keys": ["shift+escape"], "command": "toggle_mode" },
     {"keys": ["escape"], "command": "press_key", "args": {"key": "<esc>"}, "context": [ {"key": "vi_command_mode_aware"}, ]},
@@ -58,8 +55,8 @@
 
     // { "keys": ["ctrl+k", "ctrl+r"], "command": "unfold_all"},
     // { "keys": ["ctrl+k", "ctrl+m"], "command": "folding_siblings"},
-    {"keys": ["ctrl+l"], "command": "fold_siblings"},
-    {"keys": ["ctrl+h"], "command": "fold_siblings_inverse"},
+    // {"keys": ["ctrl+l"], "command": "fold_siblings"},
+    // {"keys": ["ctrl+h"], "command": "fold_siblings_inverse"},
 
     {"keys": ["ctrl+["], "command": "_enter_normal_mode", "args": {"mode": "mode_insert"}, "context": [{"key": "vi_insert_mode_aware"}, {"key": "vi_use_ctrl_keys"}]},
     {"keys": ["j", "j"], "command": "_enter_normal_mode", "args": {"mode": "mode_insert"}, "context": [{"key": "vi_insert_mode_aware"}] }

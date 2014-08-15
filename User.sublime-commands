@@ -164,6 +164,7 @@
 
     // Vintageous 
     { "caption": "Vintageous: Toggle", "command": "toggle_vintageous"},
+    { "caption": "Vintageous: browse help page", "command": "open_url_by", "args": {"url": "https://github.com/guillermooo/Vintageous/wiki/Select-Mode"}},
 
     // SideBarEnhancements
     { "caption": "File: Reveal (Open File Directory) ", "command": "side_bar_reveal" },
