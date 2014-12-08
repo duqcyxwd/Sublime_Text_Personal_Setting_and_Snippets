@@ -1,0 +1,8 @@
+<snippet>
+    <tabTrigger>br</tabTrigger>
+    <scope>source.php</scope>
+    <description>LineBreak br for php</description>
+
+    <content><![CDATA[echo "</br>";
+$0]]></content>
+</snippet>
