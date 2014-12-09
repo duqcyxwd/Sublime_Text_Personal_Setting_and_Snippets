@@ -2,21 +2,31 @@
 	"installed_packages":
 	[
 		"Alignment",
+		"All Autocomplete",
+		"AutoFileName",
 		"BracketHighlighter",
+		"CoffeeAngular Syntax",
 		"ConvertToUTF8",
+		"DocBlockr",
 		"EasyDiff",
+		"Emmet",
+		"ExportHtml",
 		"Gist",
 		"Git",
 		"Github Tools",
+		"HTMLBeautify",
 		"JsFormat",
 		"Markdown Preview",
-		"MiniPy",
+		"MarkdownEditing",
 		"Plugin Debugger",
 		"SideBarEnhancements",
 		"SmartMarkdown",
+		"SublimeCodeIntel",
 		"SublimeGit",
 		"sublimelint",
-		"Theme - Soda"
+		"Theme - Soda",
+		"Trimmer",
+		"Zen Tabs"
 	],
 	"repositories":
 	[
