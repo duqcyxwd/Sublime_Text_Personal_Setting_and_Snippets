@@ -1,29 +1,37 @@
 {
+	"in_process_packages":
+	[
+	],
 	"installed_packages":
 	[
 		"Alignment",
 		"All Autocomplete",
 		"AutoFileName",
 		"BracketHighlighter",
+		"ClojureDocSearch",
 		"CoffeeAngular Syntax",
 		"ConvertToUTF8",
 		"DocBlockr",
-		"EasyDiff",
 		"Emmet",
+		"Enhanced Clojure",
 		"ExportHtml",
 		"Gist",
 		"Git",
 		"Github Tools",
 		"HTMLBeautify",
 		"JsFormat",
+		"JSON Reindent",
 		"Markdown Preview",
 		"MarkdownEditing",
+		"Package Control",
 		"Plugin Debugger",
 		"SideBarEnhancements",
 		"SmartMarkdown",
 		"SublimeCodeIntel",
 		"SublimeGit",
 		"sublimelint",
+		"SublimeREPL",
+		"Swift",
 		"Theme - Soda",
 		"Trimmer",
 		"Zen Tabs"

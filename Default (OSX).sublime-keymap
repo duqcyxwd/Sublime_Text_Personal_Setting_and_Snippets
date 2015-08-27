@@ -203,5 +203,13 @@
 	{ "keys": ["alt+ctrl+l"], "command": "list_links" },
 
 	{ "keys": ["super+shift+up"], "command": "swap_line_up" },
-	{ "keys": ["super+shift+down"], "command": "swap_line_down" }
+	{ "keys": ["super+shift+down"], "command": "swap_line_down" },
+
+	// Clojure REPL
+	// 
+	// 	{ "keys": ["ctrl+,", "s"], "command": "repl_transfer_current", "args": {"scope": "selection"}},
+	{ "keys": ["super+k", "f"], "command": "repl_transfer_current", "args": {"scope": "file"}},
+	{ "keys": ["super+k", "l"], "command": "repl_transfer_current", "args": {"scope": "lines"}},
+	{ "keys": ["super+k", "b"], "command": "repl_transfer_current", "args": {"scope": "block"}},
+
 ]

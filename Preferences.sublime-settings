@@ -23,15 +23,15 @@
 		".hg",
 		"CVS"
 	],
-	"font_size": 13,
+	"font_size": 14,
 	"highlight_line": false,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"SmartMarkdown",
-		"Vintage",
-		"actualvim",
 		"Markdown Preview",
+		"actualvim",
+		"Vintage",
 		"MarkdownEditing",
 		"SublimeOnSaveBuild",
 		"SublimeFold"
@@ -41,6 +41,7 @@
 		"Ubuntu"
 	],
 	"shift_tab_unindent": true,
+	"show_full_path": true,
 	"soda_classic_tabs": false,
 	"soda_folder_icons": true,
 	"spell_check": true,
@@ -50,5 +51,6 @@
 	"translate_tabs_to_spaces": false,
 	"trimtrailingwhitespaceon_save": true,
 	"vintageous_reset_mode_when_switching_tabs": false,
-	"vintageous_use_ctrl_keys": true
+	"vintageous_use_ctrl_keys": true,
+	"caret_style": "solid"
 }
